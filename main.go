@@ -86,12 +86,10 @@ func subcmd() {
 	*/
 	exception(os.Chdir("/"))
 	exception(syscall.Mount("proc", "proc", "proc", 0, ""))
-	exception(syscall.Mount("thing", "mytemp", "tmpfs", 0, ""))
 
 	exception(cmd.Run())
 
 	exception(syscall.Unmount("proc", 0))
-	//exception(syscall.Unmount("thing", 0))
 }
 
 /*
