@@ -14,7 +14,7 @@ import (
 启动测试程序方法
 此次的环境是ubuntu18，运行程序需要sudo权限。其他环境下，直接使用root运行。
 编译程序：go build -o mydocker main.go
-运行程序：sudo ./docker run /bin/bash
+运行程序：sudo ./mydocker run /bin/bash
 */
 func main() {
 	switch os.Args[1] {
